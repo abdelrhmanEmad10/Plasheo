@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="Cart.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container-fluid bg-secondary-subtle">
+        <p class="text-center text-body-tertiary fs-6 fw-semibold bg-secondary-subtle">Free Express Shipping on all
+            orders with all duties included </p>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+
+                <a class="navbar-brand" href="#">PLASHOE</a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarNav">
+
+                    <ul class="navbar-nav">
+
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#">MEN</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">WOMEN</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">COLLECTION</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">LOOKBOOK</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">SALE</a>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+                <ul class="nav justify-content-end">
+
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#" style="color: black;">OUR STORY</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" style="color: black;">CONTACT</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" style="color: black;">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                                class="bi bi-bag" viewBox="0 0 16 16">
+                                <path
+                                    d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1m3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1z" />
+                            </svg>
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" style="color: black;">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                                class="bi bi-person-fill" viewBox="0 0 16 16">
+                                <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6" />
+                            </svg>
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </nav>
+
+        <form class="d-grid form-inline bg-light w-100 d-lg-none">
+            <hr class="m-0">
+            <div class="container">
+                <div class="row w-100 my-3 justify-content-around">
+                    <input class="col-7" type="search" name="Product-Name" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success col-2 my-2 my-sm-0" type="submit">Search</button>
+                </div>
+            </div>
+        </form>
+
+        <div class="container bg-white text-center row"
+            style="margin-top: 3rem; margin-bottom: 3rem;margin-left: auto; margin-right: auto;">
+            <p class="fw-bold " style="font-size:3rem;">Cart</p>
+            <div class="row row-cols-lg-2 row-cols-md-1">
+                <div class="col-lg-8 col-md-12 table-responsive" style="margin-left: auto; ">
+                <table class="table table-bordered">
+                    <thead>
+                        <tr class="row text-body-tertiary">
+                            <th scope="col" class="col" style="width: 5rem;"></th>
+                            <th scope="col" class="col text-body-tertiary" style="width: 5rem;">Product</th>
+                            <th scope="col" class="col text-body-tertiary" style="width: 5rem;">Price</th>
+                            <th scope="col" class="col text-body-tertiary" style="width: 5rem;">  Quantity  </th>
+                            <th scope="col" class="col text-body-tertiary" style="width: 5rem;">SubTotal</th>
+                            <th scope="col" class="col text-body-tertiary" style="width: 5rem;"></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="row">
+                            <th scope="row" class="col" style="width: 5rem;">
+                                <img src="5.jpg" alt="img1" class="rounded img-fluid h-50">
+                            </th>
+                            <td class="col">
+                                <a href="#" style="text-decoration: none;color: grey;cursor: pointer">Men's classic
+                                    blue</a>
+                            </td>
+                            <td class="col" style="width: 5rem;">
+                                <span class="text-body-tertiary fw-bold fs-6" id="price">$60.00</span>
+                            </td>
+                            <td class="col " style="width: 5rem;">
+                                <button type="button" class="btn btn-outline-secondary bg-none text-dark text-center" id="minusButton"
+                                    style="border-radius: 0;height: min-content;width: 1rem;">-</button>
+                                <button type="button" class="btn btn-light bg-none text-dark text-center" id="number"
+                                    disabled style="border-radius: 0;height: min-content;width: 1rem;">1</button>
+                                <button type="button" class="btn btn-outline-secondary bg-none text-dark text-center" id="plusButton"
+                                    style="border-radius: 0;height: min-content; width: 1rem;">+</button>
+
+                            </td>
+                            <td class="col" style="width: 5rem;">
+                                <span class="text-body-tertiary fw-bold fs-6" id="st">$60.00</span>
+                            </td>
+                            <td class="col" style="width: 5rem;">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-x-circle" viewBox="0 0 16 16">
+                                    <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16" />
+                                    <path
+                                        d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708" />
+                                </svg>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div style=" margin:auto ;" class="col-lg-3 col-md-12">
+                <table class="table table-bordered">
+                    <thead>
+                        <tr class="row">
+                            <th scope="col">Cart Totals</th>
+                        </tr>
+                    </thead>
+                    <tbody class="" style="justify-content: center;text-align: center;">
+                        <tr class="row">
+                            <th>
+                                <p class="text-body-tertiary fw-lighter" id="CartSubTotal">SubTotal <span>$60.00</span></p>
+                            </th>
+                        </tr>
+                        <tr class="row">
+                            <th>
+                                <p class="text-body-tertiary fw-lighter" id="CartTotal">Total <span>$60.00</span></p>
+                            </th>
+                        </tr>
+                        <tr class="row">
+                            <th>
+                                <p class="text-body-tertiary fw-lighter">Have A Coupon?</p>
+                                <button type="submit" class="btn"
+                                    style="background-color: #6A6E09;width: 100%;color: white; border-radius: 0px;">PROCEED
+                                    TO <span class="d-block">CHECKOUT</span></button>
+                            </th>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+        <div class="content d-grid w-100">
+            <div class="row justify-content-center align-content-center w-100">
+                <h1 class="col-12 text-center" style="color: white;">Better for People & the Planet</h1>
+                <p class="col-12 text-center" style="color: white;">Ut eget at et aliquam sit quis nisl, pharetra et ac
+                    pharetra est dictum in vulputate</p>
+
+                <button type="button" class="btn btn-footer col-12 col-lg-2 m-2">Women Shop</button>
+                <button type="button" class="btn btn-footer col-12 col-lg-2 m-2">Men Shop</button>
+            </div>
+        </div>
+
+        <hr>
+    </div>
+
+    <div class="image-container justify-content-center">
+        <div class="element justify-content-center border-right ms-3">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                class="bi bi-lock svg-footer" viewBox="0 0 16 16">
+                <path
+                    d="M8 1a2 2 0 0 1 2 2v4H6V3a2 2 0 0 1 2-2m3 6V3a3 3 0 0 0-6 0v4a2 2 0 0 0-2 2v5a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2M5 8h6a1 1 0 0 1 1 1v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V9a1 1 0 0 1 1-1" />
+            </svg>
+            <p>Secure Payment</p>
+        </div>
+        <div class="element justify-content-center ms-3">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                class="bi bi-truck svg-footer" viewBox="0 0 16 16">
+                <path
+                    d="M0 3.5A1.5 1.5 0 0 1 1.5 2h9A1.5 1.5 0 0 1 12 3.5V5h1.02a1.5 1.5 0 0 1 1.17.563l1.481 1.85a1.5 1.5 0 0 1 .329.938V10.5a1.5 1.5 0 0 1-1.5 1.5H14a2 2 0 1 1-4 0H5a2 2 0 1 1-3.998-.085A1.5 1.5 0 0 1 0 10.5zm1.294 7.456A2 2 0 0 1 4.732 11h5.536a2 2 0 0 1 .732-.732V3.5a.5.5 0 0 0-.5-.5h-9a.5.5 0 0 0-.5.5v7a.5.5 0 0 0 .294.456M12 10a2 2 0 0 1 1.732 1h.768a.5.5 0 0 0 .5-.5V8.35a.5.5 0 0 0-.11-.312l-1.48-1.85A.5.5 0 0 0 13.02 6H12zm-9 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2m9 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2" />
+            </svg>
+            <p>Express Shipping</p>
+        </div>
+
+        <div class="element justify-content-center ms-3 border-right">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                class="bi bi-arrow-return-left svg-footer" viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                    d="M14.5 1.5a.5.5 0 0 1 .5.5v4.8a2.5 2.5 0 0 1-2.5 2.5H2.707l3.347 3.346a.5.5 0 0 1-.708.708l-4.2-4.2a.5.5 0 0 1 0-.708l4-4a.5.5 0 1 1 .708.708L2.707 8.3H12.5A1.5 1.5 0 0 0 14 6.8V2a.5.5 0 0 1 .5-.5" />
+            </svg>
+            <p>Free Return</p>
+        </div>
+
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col col-12 col-lg-3">
+                    <h4>PLOSHOE</h4>
+                    <p>Praesent eget tortor sit risus egestas nulla pharetra ornare quis bibendum est bibendum
+                        sapien proin
+                        nascetur</p>
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+
+                <div class="footer-col col-12 col-lg-3">
+                    <h4>Shop</h4>
+                    <ul class="ul-footer">
+                        <li><a href="#">Shop Men</a></li>
+                        <li><a href="#">Shop Women</a></li>
+                        <li><a href="#">look Book</a></li>
+                        <li><a href="#">Gift Card</a></li>
+                        <li><a href="#">Sale</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col col-12 col-lg-3">
+                    <h4>About</h4>
+                    <ul class="ul-footer">
+                        <li><a href="#">Our Story</a></li>
+                        <li><a href="#">Our materials</a></li>
+                        <li><a href="#">Our Value</a></li>
+                        <li><a href="#">Sustainbility</a></li>
+                        <li><a href="#">Manufacture</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col col-12 col-lg-3">
+                    <h4>Need Help?</h4>
+                    <ul class="ul-footer">
+                        <li><a href="#">FAQs</a></li>
+                        <li><a href="#">Shipping & Returns</a></li>
+                        <li><a href="#">Shoe Care</a></li>
+                        <li><a href="#">Size Chart</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+
+</body>
+<script src="Cart.js"></script>
+
+</html>
